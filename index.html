@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="shortcut icon" href="images/common/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/common/favicon.ico" type="image/x-icon">
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/common.js"></script>  
+  <script src="js/main.js"></script>
+  <script src="js/fullpage.js"></script>
+  <title>DL건설</title>
+</head>
+<body>
+<!--S:전체영역-->
+<div id="wrap" class="main_page">
+  <!--S:header-->
+  <header id="header">
+    <!--S:헤더영역-->
+    <div class="header_area">
+      <h1><a href="index.html">로고</a></h1>
+      <!--S:gnb-->
+      <nav id="gnb">
+        <ul>
+          <li>
+            <a href="#none">DL건설 소개</a>
+            <ul class="depth">
+              <li><a href="company/company.html">회사소개</a></li>
+              <li><a href="#none">CEO 인사말</a></li>
+              <li><a href="#none">회사연혁</a></li>
+              <li><a href="#none">관계사 현황</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">사업분야</a>
+            <ul class="depth">
+              <li><a href="business/business.html">건축사업</a></li>
+              <li><a href="#none">주택사업</a></li>
+              <li><a href="#none">토목사업</a></li>
+              <li><a href="#none">조경사업</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">투자정보</a>
+            <ul class="depth">
+              <li><a href="investor/highlights.html">그룹 Highlights</a></li>
+              <li><a href="#none">IR소식</a></li>
+              <li><a href="#none">재무정보</a></li>
+              <li><a href="#none">기업지배구조</a></li>
+              <li><a href="#none">공사관리규정</a></li>
+              <li><a href="#none">ESG 등급</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">지속가능경영</a>
+            <ul class="depth">
+              <li><a href="management/ethics.html">정도경영</a></li>
+              <li><a href="#none">품질경영</a></li>
+              <li><a href="#none">환경경영</a></li>
+              <li><a href="#none">안전보건경영</a></li>
+              <li><a href="#none">상생경영</a></li>
+              <li><a href="#none">인권경영</a></li>
+              <li><a href="#none">인재경영</a></li>
+              <li><a href="#none">사회공헌</a></li>
+              <li><a href="#none">고객만족활동</a></li>
+              <li><a href="#none">ESG 보고서</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">홍보센터</a>
+            <ul class="depth">
+              <li><a href="prcenter/notice.html">회사소식</a></li>
+              <li><a href="#none">연구실적</a></li>
+              <li><a href="#none">CI/BI</a></li>
+              <li><a href="#none">홍보자료</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">인재채용</a>
+            <ul class="depth">
+              <li><a href="recruitment/recruitment.html">채용정보</a></li>
+              <li><a href="#none">채용FAQ</a></li>
+              <li><a href="#none">전자근로계약</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!--//E:gnb끝-->
+      <!--S:모바일 메뉴-->
+      <nav id="m_gnb">
+        <div class="btn_gnb">
+          <div class="btn_m-gnb_inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </div>
+        <ul>
+          <li>
+            <a href="#none" class="m_gnb_item">DL건설 소개</a>
+            <ul class="sub_menu">
+              <li><a href="company/company.html">회사소개</a></li>
+              <li><a href="#none">CEO 인사말</a></li>
+              <li><a href="#none">회사연혁</a></li>
+              <li><a href="#none">관계사 현황</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">사업분야</a>
+            <ul class="sub_menu">
+              <li><a href="business/business.html">건축사업</a></li>
+              <li><a href="#none">주택사업</a></li>
+              <li><a href="#none">토목사업</a></li>
+              <li><a href="#none">조경사업</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">투자정보</a>
+            <ul class="sub_menu">
+              <li><a href="investor/highlights.html">그룹 Highlights</a></li>
+              <li><a href="#none">IR소식</a></li>
+              <li><a href="#none">재무정보</a></li>
+              <li><a href="#none">기업지배구조</a></li>
+              <li><a href="#none">공사관리규정</a></li>
+              <li><a href="#none">ESG 등급</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">지속가능경영</a>
+            <ul class="sub_menu">
+              <li><a href="management/ethics.html">정도경영</a></li>
+              <li><a href="#none">품질경영</a></li>
+              <li><a href="#none">환경경영</a></li>
+              <li><a href="#none">안전보건경영</a></li>
+              <li><a href="#none">상생경영</a></li>
+              <li><a href="#none">인권경영</a></li>
+              <li><a href="#none">인재경영</a></li>
+              <li><a href="#none">사회공헌</a></li>
+              <li><a href="#none">고객만족활동</a></li>
+              <li><a href="#none">ESG 보고서</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">홍보센터</a>
+            <ul class="sub_menu">
+              <li><a href="prcenter/notice.html">회사소식</a></li>
+              <li><a href="#none">연구실적</a></li>
+              <li><a href="#none">CI/BI</a></li>
+              <li><a href="#none">홍보자료</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">인재채용</a>
+            <ul class="sub_menu">
+              <li><a href="recruitment/recruitment.html">채용정보</a></li>
+              <li><a href="#none">채용FAQ</a></li>
+              <li><a href="#none">전자근로계약</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>      
+      <!--//E:모바일 메뉴-->
+      <div class="btn_hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="depth_bg"></div>
+    </div>
+    <!--//E:헤더영역끝-->
+
+    <!--S:사이트맵영역-->
+    <div class="site_map">
+      <div class="site_head">
+        <div><img src="images/common/top_logo.svg" alt="로고"></div>
+        <div class="close_btn">
+          <span></span>
+          <span></span>
+          <span></span>     
+        </div>
+      </div>      
+      <div class="site_area">
+        <ul>
+          <li>
+            <strong>DL건설 소개</strong>
+            <ul class="site_depth">
+              <li><a href="company/company.html">회사소개</a></li>
+              <li><a href="#none">CEO 인사말</a></li>
+              <li><a href="#none">회사연혁</a></li>
+              <li><a href="#none">관계사 현황</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>사업분야</strong>
+            <ul class="site_depth">
+              <li><a href="business/business.html">건축사업</a></li>
+              <li><a href="#none">주택사업</a></li>
+              <li><a href="#none">토목사업</a></li>
+              <li><a href="#none">조경사업</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>투자정보</strong>
+            <ul class="site_depth">
+              <li><a href="investor/highlights.html">그룹 Highlights</a></li>
+              <li><a href="#none">IR소식</a></li>
+              <li><a href="#none">재무정보</a></li>
+              <li><a href="#none">기업지배구조</a></li>
+              <li><a href="#none">공사관리규정</a></li>
+              <li><a href="#none">ESG 등급</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>지속가능경영</strong>
+            <ul class="site_depth">
+              <li><a href="management/ethics.html">정도경영</a></li>
+              <li><a href="#none">품질경영</a></li>
+              <li><a href="#none">환경경영</a></li>
+              <li><a href="#none">안전보건경영</a></li>
+              <li><a href="#none">상생경영</a></li>
+              <li><a href="#none">인권경영</a></li>
+              <li><a href="#none">인재경영</a></li>
+              <li><a href="#none">사회공헌</a></li>
+              <li><a href="#none">고객만족활동</a></li>
+              <li><a href="#none">ESG 보고서</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>홍보센터</strong>
+            <ul class="site_depth">
+              <li><a href="prcenter/notice.html">회사소식</a></li>
+              <li><a href="#none">연구실적</a></li>
+              <li><a href="#none">CI/BI</a></li>
+              <li><a href="#none">홍보자료</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>인재채용</strong>
+            <ul class="site_depth">
+              <li><a href="recruitment/recruitment.html">채용정보</a></li>
+              <li><a href="#none">채용FAQ</a></li>
+              <li><a href="#none">전자근로계약</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--//E:사이트맵 영역-->
+  </header>
+  <!--//E:header-->
+
+  <!--S:container-->
+  <main id="container">
+    <!--S:메인비주얼영역-->
+    <div class="main_visual full_area">
+      <video autoplay muted loop>
+        <source src="media/main_visual.mp4" type="video/mp4">
+        <source src="media/main_visual.mp4" type="video/webm">  
+      </video>
+      <div class="mouse_event">
+        <div class="down_mouse">
+          <div class="down_scroller"></div>
+        </div>
+        <p>Scroll Down</p>
+      </div>
+    </div>
+    <!--//E:메인비주얼영역-->
+    
+    <!--S:사업영역 시작-->
+    <div class="full_area business">
+      <div class="section_area">
+        <!--왼쪽영역-->
+        <div data-thumbs-slider="" class="left_area swiper busi">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide"><img src="images/main/img_area_bg_01.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="images/main/img_area_bg_02.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="images/main/img_area_bg_03.jpg" alt=""></li>
+            <li class="swiper-slide"><img src="images/main/img_area_bg_04.jpg" alt=""></li>
+          </ul>
+        </div>
+        <!--오른쪽영역-->
+        <div class="right_area">
+          <!--S:메뉴영역-->
+          <div class="menu_area">
+            <ul>
+              <li class="on"><a href="#none" class="menu_link on" data-slide-to="0">건축사업</a></li>
+              <li><a href="#none" class="menu_link" data-slide-to="1">주택사업</a></li>
+              <li><a href="#none" class="menu_link" data-slide-to="2">토목사업</a></li>
+              <li><a href="#none" class="menu_link" data-slide-to="3">조경사업</a></li>
+            </ul>
+          </div>
+          <!--//E:메뉴영역-->
+          <div class="swiper busi_thumb">
+            <ul class="cont_area swiper-wrapper">
+              <li class="swiper-slide">
+                <span><img src="images/main/business_img_01.jpg" alt="건축사업"></span>
+                <h4>건축사업</h4>
+                <strong>Construction Project</strong>
+                <p>
+                  <i>편리하고 쾌적한 삶의 질 향상과 인간의 쾌적하고</i>
+                  <i>편리한 생활을 위해 연구하고 노력하고 있습니다.</i>
+                </p>
+              </li>
+              <li class="swiper-slide">
+                <span><img src="images/main/business_img_02.jpg" alt="주택사업"></span>
+                <h4>주택사업</h4>
+                <strong>Housing Project</strong>
+                <p>
+                  <i>인간중심의 친환경 아파트, 생활중심의 공간을 설계로</i>
+                  <i>고객님께 윤택하고 풍요로운 삶을 제공하고 있습니다.</i>
+                </p>
+              </li>
+              <li class="swiper-slide">
+                <span><img src="images/main/business_img_03.jpg" alt="토목사업"></span>
+                <h4>토목사업</h4>
+                <strong>Civil engineering Project</strong>
+                <p>
+                  <i>경험과 기술력을 바탕으로 탁월한 능력을 발휘하며, 설계,시공,</i>
+                  <i>감리 기술의 선진화를 앞당겨 새로운 패러다임을 열어갑니다.</i>
+                </p>
+              </li>
+              <li class="swiper-slide">
+                <span><img src="images/main/business_img_04.jpg" alt="조경사업"></span>
+                <h4>조경사업</h4>
+                <strong>Landscaping Business</strong>
+                <p>
+                  <i>인간과 환경이 어울릴 수 있게, 친환경 설계와 녹색제품</i>
+                  <i>사용으로 기후변화 완화 및 생태계 보전에 앞장서겠습니다.</i>
+                </p>
+              </li>
+            </ul>          
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>  
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//E:사업영역 끝-->
+
+    <!--S:지속가능영역-->
+    <div class="full_area mgmt_area">
+      <ul class="mgmt_inner">
+        <li class="mgmt">
+          <a href="#none">
+            <div class="img"></div>
+            <div class="img_big"></div>
+            <dl>
+              <dt>
+                <i class="ico"></i>
+                <span>정도경영</span>
+              </dt>
+              <dd class="desc">
+                <i>공개 경영 윤리경영, 사회적 책임,</i>
+                <i>지속 가능한 경영 체제를 구현해</i>
+                <i>나가는 DL 건설의 핵심가치입니다</i>
+              </dd>
+              <dd>
+                <span class="arrow"></span>
+              </dd>
+            </dl>
+          </a>
+        </li>
+        <li class="mgmt">
+          <a href="#none">
+            <div class="img"></div>
+            <div class="img_big"></div>
+            <dl>
+              <dt>
+                <i class="ico"></i>
+                <span>품질경영</span>
+              </dt>
+              <dd class="desc">
+                <i>사업기획, 설계, 시공 및 서비스에</i>
+                <i>이르기까지 최고의 품질로 고객 가치를</i>
+                <i>창출하기 위해 품질방침을 실천합니다.</i>
+              </dd>
+              <dd>
+                <span class="arrow"></span>
+              </dd>
+            </dl>
+          </a>
+        </li>
+        <li class="mgmt">
+          <a href="#none">
+            <div class="img"></div>
+            <div class="img_big"></div>
+            <dl>
+              <dt>
+                <i class="ico"></i>
+                <span>환경경영</span>
+              </dt>
+              <dd class="desc">
+                <i>기후변화 대응 및 환경오염물질관리</i>
+                <i>기준과 대상 범위 확대하여 친환경</i>
+                <i>건설 기업으로 가치 창출을 합니다.</i>
+              </dd>
+              <dd>
+                <span class="arrow"></span>
+              </dd>
+            </dl>
+          </a>
+        </li>
+        <li class="mgmt">
+          <a href="#none">
+            <div class="img"></div>
+            <div class="img_big"></div>
+            <dl>
+              <dt>
+                <i class="ico"></i>
+                <span>안전보건경영</span>
+              </dt>
+              <dd class="desc">
+                <i>현장 종사자의 인명 존중을 최우선 가치로</i>
+                <i>여기고, 안전보건경영을 통해 지속 가능한</i>
+                <i>기업이 되기 위한 방침을 실천합니다.</i>
+              </dd>
+              <dd>
+                <span class="arrow"></span>
+              </dd>
+            </dl>
+          </a>
+        </li>
+        <li class="mgmt">
+          <a href="#none">
+          <div class="img"></div>
+          <div class="img_big"></div>
+            <dl>
+              <dt>
+                <i class="ico"></i>
+                <span>상생경영</span>
+              </dt>
+              <dd class="desc">
+                <i>협력사의 체질 강화를 위한 업계</i>
+                <i>최고 수준의 상생협력 프로그램을</i>
+                <i>운영항고 있습니다.</i>
+              </dd>
+              <dd>
+                <span class="arrow"></span>
+              </dd>
+            </dl>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!--//E:지속가능영역-->
+
+    <!--S:회사소식-->
+    <div class="full_area notice_area">
+      <div class="notice_inner">
+        <!--S:회사소식 게시판-->
+        <div class="notice_bbs">
+          <div class="tite">
+            <h4>회사소식</h4>
+            <p><i>DL건설 회사소식을 빠르고</i> <i>정확하게 알려드립니다.</i></p>
+            <a href="#none" class="more_btn">더보기 +</a>
+          </div>
+          <ul class="bbs">
+            <li>
+              <div class="cont">
+                <a href="#">
+                  <strong>DL건설, 협력업체 임직원 대상 상호협력교육 진행</strong>
+                  <p>건설산업기본법·하도급법·노무관리 등 핵심 강의 진행 DL건설, 실질적 교육 콘텐츠로 동반성장 기반 다져</p>
+                </a>
+              </div>
+              <div class="data">25-07-17</div>
+            </li>
+            <li>
+              <div class="cont">
+                <a href="#">
+                  <strong>[보도자료] DL건설, 국토부 상호협력평가서 3년 연속 ‘최우수기업’ 선정</strong>
+                  <p>PQ 가산점·시공능력평가 가산 등 실질적 인센티브 확보 DL건설의 협력업체 재무·기술 지원 등 상생경영 성과 인정</p>
+                </a>
+              </div>
+              <div class="data">25-07-16</div>
+            </li>
+            <li>
+              <div class="cont">
+                <a href="#">
+                  <strong>[보도자료] DL건설, 혹서기 온열질환 집중기간 운영</strong>
+                  <p>여름철 폭염 재해 예방 및 전사적 대응체계 강화 ‘보급·보호·보장’ 더위사냥 3보 활동 캠페인도 진행 DL건설이</p>
+                </a>
+              </div>
+              <div class="data">25-07-15</div>
+            </li>
+            <li>
+              <div class="cont">
+                <a href="#">
+                  <strong>[보도자료] DL건설, 녹색기술 인증 획득…탄소감축형 엘리베이터 피트 기술 개발</strong>
+                  <p>녹색기술 인증에 걸맞은 탄소배출량 저감 효과 친환경적인 건축물 조성 및 탄소중립 정책 기여에 기대 DL건설이 중소벤</p>
+                </a>
+              </div>
+              <div class="data">25-07-14</div>
+            </li>
+          </ul>
+          <!--sns영역-->
+          <ul class="sns_area">
+            <li><a href="#none" target="_blank">유튜브</a></li>
+            <li><a href="#none" target="_blank">페이스북</a></li>
+            <li><a href="#none" target="_blank">인스타</a></li>
+          </ul>
+        </div>
+        <!--//E:회사소식 게시판-->
+        <!--연구실적/인재채용-->
+        <div class="etc_area">
+          <div class="results">
+            <a href="#none">
+              <h4>연구실적</h4>
+              <p>
+                <i>DL건설 기술연구팀은 수많은 시공경험을</i>
+                <i>바탕으로 많은 성과를 이룩하고 있습니다.</i>
+              </p>
+            </a>
+          </div>
+          <div class="recruit">
+            <a href="#none">
+              <h4>인재채용</h4>
+              <p>
+                <i>DL건설과 함께 꿈을 키워 나가고 실천시킬</i>
+                <i>인재를 찾고 있습니다.</i>
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>    
+    <!--//E:회사소식-->
+  </main>
+  <!--//E:container-->
+
+  <!--S:footer-->
+  <footer id="footer" class="full_area">
+    <div class="footer_inner">
+      <div class="f_logo"><img src="images/common/f_logo.png" alt="푸터"></div>
+      <div class="foot_menu">
+        <ul>
+          <li><a href="#none">회사소개</a></li>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">영상정보처리기기 운영 · 관리방침</a></li>
+          <li><a href="#none">결산공고</a></li>
+          <li><a href="#none">고객센터</a></li>
+        </ul>
+        <address>인천광역시 남동구 미래로 14 (구월동)</address>
+        <p>COPYRIGHT &copy; DL Construction Co., Ltd. ALL RIGHTS RESERVED.</p>
+      </div>
+      <!--패밀리사이트-->
+      <div class="family_site">
+        <select name="패밀리사이트">
+          <optgroup label="Family site">
+            <option disabled selected style="display:none;">Family site</option>
+            <option>DL건설 e편한세상</option>
+            <option>협력회사 포탈</option>
+            <option>사이버 신문고</option> 
+          </optgroup>
+          <optgroup label="관계사 사이트">
+            <option>DL이앤씨㈜</option>
+            <option>DL케미칼㈜</option>
+            <option>㈜대림</option>
+            <option>DL모터스㈜</option>
+            <option>글래드 호텔앤리조트㈜</option>
+            <option>학교법인 대림학원</option>
+            <option>(재)대림문화재단/대림미술관</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+  </footer>
+  <!--//E:footer-->
+</div>
+<!--//E:전체영역-->
+</body>
+</html>

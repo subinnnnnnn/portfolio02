@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/media.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/aos.css">  
+  <link rel="shortcut icon" href="../images/common/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/aos.js"></script>  
+  <script src="../js/common.js"></script>
+  <script src="../js/sub.js"></script>
+  <title>인재정보-채용정보</title>
+</head>
+<body>
+<!--S:전체영역-->
+<div id="wrap" class="sub_page">
+  <!--S:header-->
+  <header id="header" class="sub_hader">
+    <!--S:헤더영역-->
+    <div class="header_area">
+      <h1><a href="../index.html">로고</a></h1>
+      <!--S:gnb-->
+      <nav id="gnb">
+        <ul>
+          <li>
+            <a href="#none">DL건설 소개</a>
+            <ul class="depth">
+              <li><a href="../company/company.html">회사소개</a></li>
+              <li><a href="#none">CEO 인사말</a></li>
+              <li><a href="#none">회사연혁</a></li>
+              <li><a href="#none">관계사 현황</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">사업분야</a>
+            <ul class="depth">
+              <li><a href="../business/business.html">건축사업</a></li>
+              <li><a href="#none">주택사업</a></li>
+              <li><a href="#none">토목사업</a></li>
+              <li><a href="#none">조경사업</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">투자정보</a>
+            <ul class="depth">
+              <li><a href="../investor/highlights.html">그룹 Highlights</a></li>
+              <li><a href="#none">IR소식</a></li>
+              <li><a href="#none">재무정보</a></li>
+              <li><a href="#none">기업지배구조</a></li>
+              <li><a href="#none">공사관리규정</a></li>
+              <li><a href="#none">ESG 등급</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">지속가능경영</a>
+            <ul class="depth">
+              <li><a href="../management/ethics.html">정도경영</a></li>
+              <li><a href="#none">품질경영</a></li>
+              <li><a href="#none">환경경영</a></li>
+              <li><a href="#none">안전보건경영</a></li>
+              <li><a href="#none">상생경영</a></li>
+              <li><a href="#none">인권경영</a></li>
+              <li><a href="#none">인재경영</a></li>
+              <li><a href="#none">사회공헌</a></li>
+              <li><a href="#none">고객만족활동</a></li>
+              <li><a href="#none">ESG 보고서</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">홍보센터</a>
+            <ul class="depth">
+              <li><a href="../prcenter/notice.html">회사소식</a></li>
+              <li><a href="#none">연구실적</a></li>
+              <li><a href="#none">CI/BI</a></li>
+              <li><a href="#none">홍보자료</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none">인재채용</a>
+            <ul class="depth">
+              <li><a href="recruitment.html">채용정보</a></li>
+              <li><a href="#none">채용FAQ</a></li>
+              <li><a href="#none">전자근로계약</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!--//E:gnb끝-->
+      <!--S:모바일 메뉴-->
+      <nav id="m_gnb">
+        <div class="btn_gnb">
+          <div class="btn_m-gnb_inner">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        </div>
+        <ul>
+          <li>
+            <a href="#none" class="m_gnb_item">DL건설 소개</a>
+            <ul class="sub_menu">
+              <li><a href="../company/company.html">회사소개</a></li>
+              <li><a href="#none">CEO 인사말</a></li>
+              <li><a href="#none">회사연혁</a></li>
+              <li><a href="#none">관계사 현황</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">사업분야</a>
+            <ul class="sub_menu">
+              <li><a href="../business/business.html">건축사업</a></li>
+              <li><a href="#none">주택사업</a></li>
+              <li><a href="#none">토목사업</a></li>
+              <li><a href="#none">조경사업</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">투자정보</a>
+            <ul class="sub_menu">
+              <li><a href="../investor/highlights.html">그룹 Highlights</a></li>
+              <li><a href="#none">IR소식</a></li>
+              <li><a href="#none">재무정보</a></li>
+              <li><a href="#none">기업지배구조</a></li>
+              <li><a href="#none">공사관리규정</a></li>
+              <li><a href="#none">ESG 등급</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">지속가능경영</a>
+            <ul class="sub_menu">
+              <li><a href="../management/ethics.html">정도경영</a></li>
+              <li><a href="#none">품질경영</a></li>
+              <li><a href="#none">환경경영</a></li>
+              <li><a href="#none">안전보건경영</a></li>
+              <li><a href="#none">상생경영</a></li>
+              <li><a href="#none">인권경영</a></li>
+              <li><a href="#none">인재경영</a></li>
+              <li><a href="#none">사회공헌</a></li>
+              <li><a href="#none">고객만족활동</a></li>
+              <li><a href="#none">ESG 보고서</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">홍보센터</a>
+            <ul class="sub_menu">
+              <li><a href="../prcenter/notice.html">회사소식</a></li>
+              <li><a href="#none">연구실적</a></li>
+              <li><a href="#none">CI/BI</a></li>
+              <li><a href="#none">홍보자료</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#none" class="m_gnb_item">인재채용</a>
+            <ul class="sub_menu">
+              <li><a href="../recruitment/recruitment.html">채용정보</a></li>
+              <li><a href="#none">채용FAQ</a></li>
+              <li><a href="#none">전자근로계약</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>      
+      <!--//E:모바일 메뉴-->      
+      <div class="btn_hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="depth_bg"></div>
+    </div>
+    <!--//E:헤더영역끝-->
+
+    <!--S:사이트맵영역-->
+    <div class="site_map">
+      <div class="site_head">
+        <div><img src="../images/common/top_logo.svg" alt="로고"></div>
+        <div class="close_btn">
+          <span></span>
+          <span></span>
+          <span></span>     
+        </div>
+      </div>      
+      <div class="site_area">
+        <ul>
+          <li>
+            <strong>DL건설 소개</strong>
+            <ul class="site_depth">
+              <li><a href="../company/company.html">회사소개</a></li>
+              <li><a href="#none">CEO 인사말</a></li>
+              <li><a href="#none">회사연혁</a></li>
+              <li><a href="#none">관계사 현황</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>사업분야</strong>
+            <ul class="site_depth">
+              <li><a href="../business/business.html">건축사업</a></li>
+              <li><a href="#none">주택사업</a></li>
+              <li><a href="#none">토목사업</a></li>
+              <li><a href="#none">조경사업</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>투자정보</strong>
+            <ul class="site_depth">
+              <li><a href="../investor/highlights.html">그룹 Highlights</a></li>
+              <li><a href="#none">IR소식</a></li>
+              <li><a href="#none">재무정보</a></li>
+              <li><a href="#none">기업지배구조</a></li>
+              <li><a href="#none">공사관리규정</a></li>
+              <li><a href="#none">ESG 등급</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>지속가능경영</strong>
+            <ul class="site_depth">
+              <li><a href="../management/ethics.html">정도경영</a></li>
+              <li><a href="#none">품질경영</a></li>
+              <li><a href="#none">환경경영</a></li>
+              <li><a href="#none">안전보건경영</a></li>
+              <li><a href="#none">상생경영</a></li>
+              <li><a href="#none">인권경영</a></li>
+              <li><a href="#none">인재경영</a></li>
+              <li><a href="#none">사회공헌</a></li>
+              <li><a href="#none">고객만족활동</a></li>
+              <li><a href="#none">ESG 보고서</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>홍보센터</strong>
+            <ul class="site_depth">
+              <li><a href="../prcenter/notice.html">회사소식</a></li>
+              <li><a href="#none">연구실적</a></li>
+              <li><a href="#none">CI/BI</a></li>
+              <li><a href="#none">홍보자료</a></li>
+            </ul>
+          </li>
+          <li>
+            <strong>인재채용</strong>
+            <ul class="site_depth">
+              <li><a href="../recruitment/recruitment.html">채용정보</a></li>
+              <li><a href="#none">채용FAQ</a></li>
+              <li><a href="#none">전자근로계약</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--//E:사이트맵 영역-->  
+  </header>
+  <!--//E:header-->
+
+  <!--S:container-->
+  <main id="container">
+    <!--S:SubVisual-->
+    <div class="sub_visual recruitment_img">
+      <div class="tite_area">
+        <div class="tite_inner">
+          <h2><i>Talent</i><i>Recruitment</i></h2>
+          <p>더 좋은 삶의 터전을 창조하는 건설사로 거듭나는 DL건설을 기대해 주시기 바랍니다.</p>
+        </div>
+      </div>
+    </div>
+    <!--//E:SubVisual-->
+    
+    <!--S:sub_content-->
+    <div class="sub_content">
+      <!--S:서브메뉴영역-->
+      <div class="sub_nav">
+        <div class="nav_wrap">
+          <div class="list">
+            <ul class="h_mm">
+              <li>
+                <a href="#none">
+                  <img src="../images/common/home_app_logo.png" alt="홈아이콘">
+                </a>
+              </li>
+              <li><a href="#none">인재채용</a>
+                <ul class="hide">
+                  <li><a href="#none">DL건설소개</a></li>
+                  <li><a href="#none">사업분야</a></li>
+                  <li><a href="#none">투자정보</a></li>
+                  <li><a href="#none">지속가능경영</a></li>
+                  <li><a href="#none">홍보센터</a></li>
+                  <li><a href="#none">인재채용</a></li>
+                </ul>
+              </li>
+              <li><a href="#n">채용정보</a>
+                <ul class="hide">
+                  <li><a href="#none">채용정보</a></li>
+                  <li><a href="#none">채용FAQ</a></li>
+                  <li><a href="#none">전자근로계약</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--E:서브메뉴영역-->    
+      <div class="contet_area inner">
+        <!--서브타이틀-->
+        <div class="sub_tite">
+          <h2>인재채용</h2>
+          <strong>A better <em>tomorrow</em></strong>
+          <p>
+            <i>지금까지 이뤄온 것들을 내세우기 보다 모두가 꿈꿔온 것들을 향하여 나아갑니다.</i>
+            <i>더 좋은 세상, 더 나은 내일을 만들어 가는 DL건설과 함께 성장하세요.</i>
+          </p>
+        </div>
+        <!--S:일반/전문적채용프로세스-->
+        <div class="process_area">
+          <h4><i>일반/전문직</i> 채용 프로세스</h4>
+          <p class="tit">DL건설은 구성원의 휴식있는 삶, 건강한 삶, 지속가능한 삶을 위해 노력합니다.</p>
+          <ul class="process_list">
+            <li>
+              <div class="circle ico01"></div>
+              <p>지원서접수</p>
+            </li>
+            <li>
+              <div class="circle ico02"></div>
+              <p>서류전형</p>
+            </li>
+            <li>
+              <div class="circle ico03"></div>
+              <p>인성검사</p>
+            </li>
+            <li>
+              <div class="circle ico04"></div>
+              <p>면접전형(1~2차)</p>
+            </li>
+            <li>
+              <div class="circle ico05"></div>
+              <p>신체검사</p>
+            </li>
+            <li>
+              <div class="circle ico06"></div>
+              <p>최종합격</p>
+            </li>
+          </ul>
+          <div class="new_window">
+            <a href="#none" target="_blank">채용공고 바로가기</a>
+          </div>
+        </div>
+        <!--//E:일반/전문직채용프로세스-->
+        <!--S:현재직 채용 프로세스-->
+        <div class="process_area">
+          <h4><i>현재직</i> 채용 프로세스</h4>
+          <p class="tit">DL건설은 구성원의 휴식있는 삶, 건강한 삶, 지속가능한 삶을 위해 노력합니다.</p>
+          <ul class="process_list">
+            <li>
+              <div class="circle ico01"></div>
+              <p>지원서접수</p>
+            </li>
+            <li>
+              <div class="circle ico02"></div>
+              <p>서류전형</p>
+            </li>
+            <li>
+              <div class="circle ico04"></div>
+              <p>면접전형</p>
+            </li>
+            <li>
+              <div class="circle ico05"></div>
+              <p>신체검사</p>
+            </li>
+            <li>
+              <div class="circle ico06"></div>
+              <p>최종합격</p>
+            </li>
+          </ul>
+          <span>※상기 채용절차는 상황에 따라 변경 될 수 있습니다.</span>
+        </div>
+        <!--//E:현재직 채용 프로세스-->
+        <!--S:현재직 채용 모집공고-->
+        <div class="recruit_list">
+          <div class="recruit_inner">
+            <h4><i>현재직</i> 채용 모집공고</h4>
+            <form>
+              <div class="recruit_search_box">
+                <select name="search_list">
+                  <option>제목</option>
+                  <option>내용</option>
+                </select>
+              </div>
+              <div class="recruit_txt_box">
+                <input type="text" name="keyword" id="keyword" maxlength="30" title="검색어를 입력해주세요" placeholder="검색어를 입력해주세요">
+                <button type="submit">검색하기</button>
+              </div>
+            </form>
+          </div>
+          <!--채용공고 리스트게시판-->
+          <table class="recruit_table">
+						<caption>채용공고 리스트 게시판</caption>
+            <colgroup>
+              <col style="width:50%">								
+              <col style="width:25%">								
+              <col>								
+              <col>								
+						</colgroup>  
+            <thead>
+              <tr>
+                <th>제목</th>
+                <th>모집기간</th>
+                <th>상태</th>
+                <th>조회수</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>			
+                <td><a href="#">DL건설「e편한세상 검단 에코비스타」현장 안전관리자 모집</a></td>
+                <td>2025-01-13~2025-01-31</td>
+                <td class="blue">채용중</td>
+                <td>3721</td>
+              </tr>
+              <tr>
+                <td><a href="#">DL건설「e편한세상 동인천 베이프런트」현장 현채직 직원 모집</a></td>
+                <td>2024-12-18~2024-12-22</td>
+                <td>마감</td>
+                <td>3153</td>
+              </tr>
+              <tr>
+                <td><a href="#">DL건설「새만금전주5공구」현장 안전보조 모집</a></td>
+                <td>2024-10-21~2024-10-25</td>
+                <td>마감</td>
+                <td>3439</td>
+              </tr>
+              <tr>
+                <td><a href="#">DL건설「e편한세상 평촌 어반밸리」분양사무소 현채직 모집</a></td>
+                <td>2024-04-15~2024-04-17</td>
+                <td>마감</td>
+                <td>6998</td>
+              </tr>
+              <tr>		
+                <td><a href="#">DL건설「e편한세상 부평역 센트럴파크」분양사무소 현채직 모집</a></td>
+                <td>2024-04-15~2024-04-17</td>
+                <td>마감</td>
+                <td>4387</td>
+              </tr>
+              <tr>
+                <td><a href="#">DL건설「e편한세상 검단 에코비스타」분양사무소 현채직 사원 모집</a></td>
+                <td>2024-02-16~2024-02-23</td>
+                <td>마감</td>
+                <td>5466</td>
+              </tr>
+              <tr>
+                <td><a href="#">[계약] 품질점검단 계약직 사원 모집 (사무실 여의도, 전국현장 출장예정)</a></td>
+                <td>2024-02-02~2024-02-08</td>
+                <td>마감</td>
+                <td>4586</td>
+              </tr>
+              <tr>		
+                <td><a href="#">DL건설「e편한세상 신곡 시그니처뷰」분양사무소 현채직 모집</a></td>
+                <td>2024-01-24~2024-01-27</td>
+                <td>마감</td>
+                <td>3964</td>
+              </tr>
+              <tr>	
+                <td><a href="#">DL건설「새만금전주5공구」현장 현채직 공무 (대관) 모집</a></td>
+                <td>2024-01-02~2024-01-12</td>
+                <td>마감</td>
+                <td>2183</td>
+              </tr>
+              <tr>	
+                <td><a href="#">DL건설「e편한세상 시티 청라」현장사무소 현채직 모집</a></td>
+                <td>2023-11-27~2023-12-01</td>
+                <td>마감</td>
+                <td>5539</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!--//E:현재직 채용 모집공고-->
+      </div>
+      <!--페이징-->
+      <ul class="paging">
+        <li><a href="#none">&lt;</a></li>
+        <li class="on"><a href="#none">1</a></li>
+        <li><a href="#none">2</a></li>
+        <li><a href="#none">3</a></li>
+        <li><a href="#none">4</a></li>
+        <li><a href="#none">&gt;</a></li>        
+      </ul>
+    </div>
+    <!--//E:sub_content-->
+    <!--위로가기-->
+    <div class="btn_top">
+      <a href="#wrap">Top</a>
+    </div>
+  </main>
+  <!--//E:container-->
+
+  <!--S:footer-->
+  <footer id="footer">
+    <div class="footer_inner">
+      <div class="f_logo"><img src="../images/common/f_logo.png" alt="푸터"></div>
+      <div class="foot_menu">
+        <ul>
+          <li><a href="#none">회사소개</a></li>
+          <li><a href="#none">개인정보처리방침</a></li>
+          <li><a href="#none">영상정보처리기기 운영 · 관리방침</a></li>
+          <li><a href="#none">결산공고</a></li>
+          <li><a href="#none">고객센터</a></li>
+        </ul>
+        <address>인천광역시 남동구 미래로 14 (구월동)</address>
+        <p>COPYRIGHT &copy; DL Construction Co., Ltd. ALL RIGHTS RESERVED.</p>
+      </div>
+      <!--패밀리사이트-->
+      <div class="family_site">
+        <select name="패밀리사이트">
+          <optgroup label="Family site">
+            <option disabled selected style="display:none;">Family site</option>
+            <option>DL건설 e편한세상</option>
+            <option>협력회사 포탈</option>
+            <option>사이버 신문고</option> 
+          </optgroup>
+          <optgroup label="관계사 사이트">
+            <option>DL이앤씨㈜</option>
+            <option>DL케미칼㈜</option>
+            <option>㈜대림</option>
+            <option>DL모터스㈜</option>
+            <option>글래드 호텔앤리조트㈜</option>
+            <option>학교법인 대림학원</option>
+            <option>(재)대림문화재단/대림미술관</option>
+          </optgroup>
+        </select>
+      </div>
+    </div>
+  </footer>
+  <!--//E:footer-->
+</div>
+<!--//E:전체영역-->
+</body>
+</html>
