@@ -1,0 +1,887 @@
+@charset "UTF-8";
+#container .sub_visual{
+  position:relative;
+  width:100%;
+  height:490px;
+  background-image:url("../images/sub/sub_img_01.jpg");
+  background-repeat:no-repeat;
+  background-size:110%;
+  background-attachment:fixed;
+}
+#container .sub_visual::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.6);
+}
+#container .sub_visual .tite_area{
+  position:relative;
+  z-index:1;
+  width:1200px;
+  height:100%;
+  margin:0 auto;
+}
+#container .sub_visual .tite_area .tite_inner{
+  position:absolute;
+  bottom:117px;
+  left:0;
+}
+#container .sub_visual .tite_area .tite_inner h2{
+  font-size:var(--main-tite-font);
+  font-weight:var(--font-weight-bold);
+  text-transform:uppercase;
+  color:#fff;
+}
+#container .sub_visual .tite_area .tite_inner h2 i{
+  display:block;
+}
+#container .sub_visual .tite_area .tite_inner p{
+  padding-top:15px;
+  font-size:var(--sub-tite-font);
+  color:#fff;
+  letter-spacing:-0.02rem;
+}
+/*서브메뉴영역*/
+#container .sub_content{
+  position:relative;
+}
+#container .sub_content .sub_nav{
+  position:absolute;
+  top:-40px;
+  left:50%;
+  transform:translateX(-50%);
+}
+#container .sub_content .sub_nav .nav_wrap{
+  width:1200px;
+  background-color:var(--main-point-color);
+}
+#container .sub_content .sub_nav .nav_wrap .list > ul{
+  display:flex;
+  align-items:center;
+}
+#container .sub_content .sub_nav .nav_wrap .list > ul > li{
+  position:relative;
+  text-align:left;
+}
+#container .sub_content .sub_nav .nav_wrap .list > ul > li::before{
+  content:"";
+  position:absolute;
+  top:50%;
+  right:8%;
+  width:5px;
+  height:5px;
+  border-top:2px solid #fff;
+  border-right:2px solid #fff;
+  transform: translateY(-50%) rotate(135deg);
+}
+#container .sub_content .sub_nav .nav_wrap .list > ul > li:nth-child(1):before{
+  content:"";
+  display:none;
+}
+#container .sub_content .sub_nav .nav_wrap .list > ul > li::after{
+ content:"";
+  position:absolute;
+  top:50%;
+  right:0;
+  transform:translateY(-50%);
+  width:1px;
+  height:14px;
+  background-color:#fff;
+}
+#container .sub_content .sub_nav .nav_wrap .list > ul > li:last-child:after{
+  content:"";
+  display:none;
+}
+#container .sub_content .sub_nav .nav_wrap .list > ul > li > a{
+  padding:29px 135px 29px 0;
+  font-size:1.8rem;
+  text-indent:30px; 
+  color:#fff;
+}
+#container .sub_content .sub_nav .nav_wrap .list > ul > li:nth-child(1) img{
+  display:block;
+}
+#container .sub_content .sub_nav .nav_wrap .list > ul > li:nth-child(1) > a{
+  padding:17px 25px;
+}
+#container .sub_content .sub_nav .nav_wrap .list ul li ul.hide{
+  display:none; 
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:5;
+  width:100%;
+  background:#fff;
+  box-shadow:0px 0px 1px rgba(0,0,0,0.5);
+}
+#container .sub_content .sub_nav .nav_wrap .list ul li ul.hide li{
+  width:100%;
+  font-size:1.6rem;
+  border-bottom:1px solid #efefef;
+}
+#container .sub_content .sub_nav .nav_wrap .list ul li ul.hide li a{
+  padding:10px 0;
+  text-indent:30px;
+}
+
+/*fixed*/
+#container .sub_content .sub_nav.fixed{
+  position:fixed;
+  top:0;
+  left:0;
+  transform: translateX(0);
+  width:100%;
+  z-index:99;
+  background-color:var(--main-point-color);
+  animation:top .5s linear;        
+}
+#container .sub_content .sub_nav.fixed .nav_wrap{
+  margin:0 auto;
+}
+@keyframes top{
+  0%{
+      transform:translateY(-100%);
+  }
+  100%{
+      transform:translateY(0%);
+  }
+}  
+
+/*컨텐츠 영역*/
+#container .contet_area{
+  padding-top:150px;
+}
+#container .sub_tite{
+  text-align:center;
+}
+#container .sub_tite h2{
+  position:relative;
+  padding-bottom:20px;
+  font-size:5rem;
+  font-weight:var(--font-weight-bold);
+}
+#container .sub_tite h2::after{
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:50%;
+  transform:translateX(-50%);
+  width:69px;
+  height:8px;
+  background:url("../images/common/tite_line.png") no-repeat;
+
+}
+#container .sub_tite strong{
+  display:block;
+  margin:30px 0;
+  font-size:var(--main-tite-font);
+  font-weight:var(--font-weight-bold);
+}
+#container .sub_tite strong i,
+#container .sub_tite p i{
+  display:block;
+}
+#container .sub_tite strong em{
+  color:var(--sub-point-color);
+}
+#container .sub_tite strong i:nth-of-type(2){
+  font-weight:var(--font-weight-medium);
+}
+#container .sub_tite p{
+  font-size:var(--sub-tite-font);
+  color:var(--sub-color);
+  line-height:1.6;
+  letter-spacing:-0.02rem;
+}
+#container .company_cont{
+  margin-top:100px;
+  font-size:var(--sub-tite-font);
+  color:var(--sub-color);
+  line-height:1.6;
+  letter-spacing:-0.02em;
+  word-break:keep-all;
+}
+#container .company_cont span{
+  display:block;
+}
+#container .contet_area .info{
+  margin:50px 0 150px;
+  width:100%;
+  text-align:left;
+  font-size:1.6rem;
+  border-top:2px solid #ddd;
+}
+#container .contet_area .info caption{
+  display:none;
+}
+#container .contet_area .info th{
+  width:180px;
+  padding:10px 0;
+  background-color:#F5F6F8;
+  text-indent:10px;
+  border-bottom:1px solid #ddd;
+}
+#container .contet_area .info td{
+  text-indent:10px;
+  border-bottom:1px solid #ddd;
+}
+/*기업이념*/
+#container .corevalue_area .inner{
+  padding:150px 0;
+}
+#container .corevalue_area .sub_tite strong em{
+  font-weight:var(--font-weight-bold);
+}
+#container .corevalue_area ul{
+  display:flex;
+  margin-top:100px;
+}
+#container .corevalue_area ul li{
+  width:calc(100%/3);
+}
+#container .corevalue_area ul li span{
+  position:relative;
+  display:block;
+  width:250px;
+  height:250px;
+  margin:0 auto;
+  border-radius:50%;
+}
+#container .corevalue_area ul li:nth-child(1) span{
+  background-color:var(--main-point-color);
+}
+#container .corevalue_area ul li:nth-child(2) span{
+  background-color:var(--sub-point-color);
+}
+#container .corevalue_area ul li:nth-child(3) span{
+  background-color:var(--sub-point-color2);
+}
+#container .corevalue_area ul li span::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:120px;
+  height:120px;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+#container .corevalue_area ul li:nth-child(1) span::after{
+  background-image:url("../images/icon/company_icon_01.png");
+}
+#container .corevalue_area ul li:nth-child(2) span::after{
+  height:133px;
+  background-image:url("../images/icon/company_icon_02.png");
+}
+#container .corevalue_area ul li:nth-child(3) span::after{
+  background-image:url("../images/icon/company_icon_03.png");
+}
+#container .corevalue_area ul li p{
+  margin-top:30px;
+  font-size:var(--sub-tite-font);
+  color:var(--sub-color);
+  text-align:center;
+}
+#container .corevalue_area ul li p i{
+  display:block;
+}
+#container .cont_box div:nth-of-type(1).company_cont{
+  margin:150px 0 0; 
+}
+#container .cont_box .company_cont{
+  margin:50px 0;
+}
+#container .cont_box .company_cont i{
+  color:var(--sub-point-color);
+}
+
+/*사업분야*/
+#container .sub_visual.business_img{
+  background-image:url("../images/sub/sub_img_02.jpg");
+}
+/*검색*/
+.search_box{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.search_box .select_area{
+  position:relative;
+}
+.search_box .select_area::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  right:20px;
+  transform:translateY(-50%);
+  width:0;
+  height:0;
+  border-style:solid;
+  border-width:7px 6px 0px 6px;
+  border-color:#fff transparent transparent transparent;
+}
+.search_box .select_area select{
+  padding:16px 120px 16px 10px;
+  background-color:var(--sub-point-color);
+  border:none;
+  font-size:1.8rem;
+  color:#fff;
+  appearance:none;
+  cursor:pointer;
+}
+.search_box .submit_box{
+  border-bottom:1px solid #ddd;
+}
+.search_box .submit_box input{
+  font-size:1.8rem;
+  color:var(--sub-color);
+  letter-spacing:-0.02rem;
+  text-indent:10px;
+  border:none;
+}
+.search_box .submit_box button{
+  background:url("../images/common/search_icon.png") no-repeat 50% 50%;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
+  cursor:pointer;
+}
+/*갤러리*/
+ul.gallery_list{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:100px 30px;
+  margin-top:100px;
+}
+ul.gallery_list li{
+  position:relative;
+  width:calc((100% - 60px)/3);
+  overflow:hidden;
+}
+ul.gallery_list li img{
+  display:block;
+  object-fit:cover;
+  transition:scale 0.5s linear;
+}
+ul.gallery_list li:hover img{
+  scale:1.2;
+}
+ul.gallery_list li p{
+  position:absolute;
+  bottom:0;
+  left:0;
+  padding:14px 0;
+  width:100%;
+  background-color:rgba(0,0,0,0.7);
+  font-size:var( --sub-tite-font);
+  text-align:center;
+  color:#fff;
+  letter-spacing:-0.03rem;
+}
+ul.paging{
+  display:flex;
+  justify-content:center;
+  column-gap:10px;
+  margin-top:100px;
+}
+ul.paging li a{
+  width:50px;
+  height:50px;
+  line-height:50px;
+  font-size:var(--sub-tite-font);
+  color:var(--sub-color);
+  text-align:center;
+  border:1px solid #ddd;
+}
+ul.paging li.on a{
+  background-color:var(--main-point-color);
+  border-color:var(--main-point-color);
+  color:#fff;
+}
+/*투자정보*/
+#container .sub_visual.investor_img{
+  background-image:url("../images/sub/sub_img_03.jpg");
+}
+#container .sub_tite p.stit{
+  margin:80px 0 100px;
+  font-size:5rem;
+  font-weight:var(--font-weight-bold);
+  color:var(--main-color);
+}
+/*dl그룹*/
+ul.dlgroup{
+  display:flex;
+  justify-content:space-between;
+}
+ul.dlgroup li{
+  position:relative;
+  width:calc(100%/3);
+  text-align:center;
+}
+ul.dlgroup li::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  right:0;
+  transform:translateY(-50%);
+  width:1px;
+  height:100%;
+  background-color:#ddd;
+}
+ul.dlgroup li:last-child::after{
+  display:none;
+}
+ul.dlgroup li p{
+  margin-top:57px;
+  font-size:4rem;
+  font-weight:var(--font-weight-medium);
+}
+ul.dlgroup li strong{
+  font-size:5rem;
+  font-weight:var(--font-weight-bold);
+  color:var(--sub-point-color);
+}
+/*건설부문*/
+#container .const_area{
+  margin-top:200px;
+}
+#container .const_area .inner{
+  padding:120px 0 200px;
+}
+ul.content{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:100px 30px;
+}
+ul.content li{
+  width:calc((100% - 60px) /3);
+  text-align:center;
+}
+ul.content li .img_box{
+  position:relative;
+}
+ul.content li .img_box p{
+  position:absolute;
+  bottom:13px;
+  right:13px;
+  font-size:var(--main-tite-font);
+  color:#fff;
+}
+ul.content li .img_box p i{
+  font-size:5rem;
+}
+ul.content li .txt_box{
+  margin-top:25px;
+}
+ul.content li .txt_box strong{
+  font-size:3rem;
+  letter-spacing:-0.09rem;
+}
+ul.content li .txt_box strong i{
+  font-weight:var(--font-weight-bold);
+}
+ul.content li .txt_box span{
+  display:block;
+  margin-top:5px;
+  font-size:var(--eng-tite-font);
+  color:var(--sub-color);
+  letter-spacing:-0.03rem;
+}
+/*석유화학/에너지 부문*/
+ul.energy{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:30px;
+}
+ul.energy li{
+  width:calc((100% - 60px)/3);
+  padding:80px 50px;
+  border:1px solid #ddd;
+  text-align:center;
+}
+ul.energy li .ico{
+  width:150px;
+  height:145px;
+  margin:0 auto;
+  background-repeat:no-repeat;
+}
+ul.energy li:nth-child(1) .ico{
+  background-image:url("../images/icon/sub03_icon_04.png");
+}
+ul.energy li:nth-child(2) .ico{
+  background-image:url("../images/icon/sub03_icon_05.png");
+}
+ul.energy li:nth-child(3) .ico{
+  background-image:url("../images/icon/sub03_icon_06.png");
+}
+ul.energy li:nth-child(4) .ico{
+  background-image:url("../images/icon/sub03_icon_07.png");
+}
+ul.energy li:nth-child(5) .ico{
+  background-image:url("../images/icon/sub03_icon_08.png");
+}
+ul.energy li:last-child .ico{
+  background-image:url("../images/icon/sub03_icon_09.png");
+}
+ul.energy .txt_box strong{
+  display:block;
+  margin-bottom:2px;
+  font-size:var(--main-tite-font);
+  font-weight:var(--font-weight-medium);
+  color:var(--main-point-color);
+}
+ul.energy .txt_box strong i{
+  font-size:5rem;
+}
+ul.energy .txt_box p{
+  font-size:3rem;
+  font-weight:var(--font-weight-medium);
+}
+ul.energy .txt_box p span{
+  display:block;
+}
+ul.energy .txt_box p i{
+  font-weight:var(--font-weight-bold);
+}
+ul.energy .txt_box p i.green{
+  color:var(--sub-point-color);
+}
+ul.energy .txt_box p.small_txt{
+  margin-top:2px;
+  font-size:var(--eng-tite-font);
+  color:var(--sub-color);
+}
+/*레저/문화/교육/부분*/
+.culture_area{
+  margin-top:200px;
+}
+.culture_area .inner{
+  padding:200px 0;
+}
+.culture_area ul.content li .img_box p{
+  font-size:3rem;
+}
+#footer.foot_investor{
+  margin-top:0;
+}
+
+/*지속가능경영*/
+#container .sub_visual.ethics_img{
+  background-image:url("../images/sub/sub_img_04.jpg");
+}
+/*아이콘*/
+#container ul.ethics_icon{
+  display:flex;
+  margin-top:100px;
+}
+#container ul.ethics_icon li{
+  width:calc(100%/3);
+  text-align:center;
+}
+#container ul.ethics_icon li span.circle{
+  position:relative;
+  display:block;
+  width:250px;
+  height:250px;
+  margin:0 auto;
+  border-radius:50%;
+}
+#container ul.ethics_icon li:nth-child(1) span.circle{
+  background-color:var(--main-point-color);
+}
+#container ul.ethics_icon li:nth-child(2) span.circle{
+  background-color:var(--sub-point-color);
+}
+#container ul.ethics_icon li:nth-child(3) span.circle{
+  background-color:var(--sub-point-color2);
+}
+#container ul.ethics_icon li span.circle::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:120px;
+  height:120px;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
+#container ul.ethics_icon li:nth-child(1) span.circle::after{
+  background-image:url("../images/icon/mgmt_icon_01.png");
+}
+#container ul.ethics_icon li:nth-child(2) span.circle::after{
+  height:112px;
+  background-image:url("../images/icon/mgmt_icon_02.png");
+}
+#container ul.ethics_icon li:nth-child(3) span.circle::after{
+  background-image:url("../images/icon/mgmt_icon_03.png");
+}
+#container ul.ethics_icon li strong{
+  display:block;
+  margin:35px 0 5px 0;
+  font-size:4.0rem;
+  font-weight:var(--font-weight-bold);
+}
+#container ul.ethics_icon li strong i{
+  color:var(--sub-point-color);
+}
+#container ul.ethics_icon li p{
+  font-size:var(--sub-tite-font);
+}
+#container ul.ethics_icon li p:nth-of-type(1){
+  color:var(--main-point-color);
+}
+#container ul.ethics_icon li p:nth-of-type(2){
+  margin-top:10px;
+  color:var(--sub-color);
+  line-height:1.4;
+  letter-spacing:-0.05rem;
+}
+#container ul.ethics_icon li p:nth-of-type(2) span{
+  display:block;
+}
+/*회사소식*/
+#container .sub_visual.notice_img{
+  background-image:url("../images/sub/sub_img_05.jpg");
+}
+ul.notice_list{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:100px 30px;
+  margin-top:100px;
+}
+ul.notice_list li{
+  position:relative;
+  width:calc((100% - 60px)/3);
+  overflow:hidden;
+}
+ul.notice_list li div.img{
+  overflow:hidden;
+}
+ul.notice_list li div.img:hover img{
+  transition: 0.2s linear;
+}
+ul.notice_list li div.img:hover img{
+  transform: scale(1.2);
+}
+ul.notice_list li div.img img{
+  display:block;
+}
+ul.notice_list li p{
+  margin-top:20px;
+  font-size:var(--sub-tite-font);
+  color:var(--sub-color);
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+/*채용정보*/
+#container .sub_visual.recruitment_img{
+  background-image:url("../images/sub/sub_img_06.jpg");
+}
+#container .process_area{
+  position:relative;
+  margin-top:100px;
+  padding:70px 0;
+  border-top:1px solid #ddd;
+}
+#container .process_area h4{
+  font-size:4rem;
+}
+#container .process_area h4 i{
+  font-weight:var(--font-weight-bold);
+}
+#container .process_area p.tit{
+  padding-top:10px;
+  font-size:1.8rem;
+  color:var(--sub-color);
+}
+#container .process_area ul.process_list{
+  display:flex;
+  justify-content:space-evenly;
+  column-gap:50px;
+  margin-top:100px;
+}
+#container .process_area ul.process_list li{
+  margin-top:20px;
+  text-align:center;
+}
+#container .process_area ul.process_list li div.circle{
+  position:relative;
+  width:150px;
+  height:150px;
+  background-color:#F4F8FC;
+  border-radius:50%;
+}
+#container .process_area ul.process_list li div.circle::after{
+  content:"";
+  display:block;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:52px;
+  height:65px;
+  background-repeat:no-repeat;
+}
+#container .process_area ul.process_list li div.circle.ico01::after{
+  background-image:url("../images/icon/sub06_icon_01.png");
+}
+#container .process_area ul.process_list li div.circle.ico02::after{
+  width:69px;
+  background-image:url("../images/icon/sub06_icon_02.png");
+}
+#container .process_area ul.process_list li div.circle.ico03::after{
+  width:57px;
+  background-image:url("../images/icon/sub06_icon_03.png");
+}
+#container .process_area ul.process_list li div.circle.ico04::after{
+  width:65px;
+  background-image:url("../images/icon/sub06_icon_04.png");
+}
+#container .process_area ul.process_list li div.circle.ico05::after{
+  width:65px;
+  background-image:url("../images/icon/sub06_icon_05.png");
+}
+#container .process_area ul.process_list li div.circle.ico06::after{
+  width:62px;
+  background-image:url("../images/icon/sub06_icon_06.png");
+}
+#container .process_area ul.process_list li p{
+  margin-top:30px;
+  font-size:var(--sub-tite-font);
+  color:var(--sub-color);
+}
+#container .process_area span{
+  display:block;
+  margin:100px 0;
+  padding-top:20px;
+  border-top:1px solid #ddd;
+  font-size:1.8rem;
+  color:var(--sub-color);
+}
+/*채용공고바로가기 버튼*/
+#container .process_area .new_window{
+  position:absolute;
+  right:0;
+  top:70px;
+  background-color:var(--sub-point-color);
+  text-align:center;
+}
+#container .process_area .new_window a{
+  position:relative;
+  padding:20px;
+  color:#fff;
+  font-size:1.8rem;
+}
+#container .process_area .new_window a::after{
+  content:"";
+  display:inline-block;
+  padding-left:5px;
+  width:24px;
+  height:24px;
+  background:url("../images/common/new_win_icon.png") no-repeat 50%;
+  vertical-align:bottom;
+}
+/*현재직채용모집공고*/
+#container .recruit_list h4{
+  font-size:4rem;
+}
+#container .recruit_list h4 i{
+  font-weight:var(--font-weight-bold);
+}
+#container .recruit_inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+#container .recruit_inner form{
+  display:flex;
+}
+#container .recruit_inner .recruit_search_box{
+  position:relative;
+}
+#container .recruit_inner .recruit_search_box::after{
+  content:"";
+  position:absolute;
+  top:50%;
+  right:20px;
+  transform:translateY(-50%);
+  width:0;
+  height:0;
+  border-style:solid;
+  border-width:7px 6px 0px 6px;
+  border-color:var(--main-color) transparent transparent transparent;
+}
+#container .recruit_inner .recruit_search_box select{
+  padding:16px 0;
+  width:115px;
+  font-size:1.8rem;
+  text-indent:15px;
+  background-color:#F5F6F8;
+  border:1px solid #ddd;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  cursor:pointer;
+}
+
+#container .recruit_inner .recruit_txt_box{
+  position:relative;
+  border:1px solid #ddd;
+  border-left:none;
+}
+#container .recruit_inner .recruit_txt_box input{
+  padding:15px 0 15px 20px;
+  font-size:1.8rem;
+  color:#999;
+  border:none;
+}
+#container .recruit_inner .recruit_txt_box button{
+  background:url("../images/common/search_icon.png") no-repeat 50% 50%;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden;
+  cursor:pointer;
+}
+/*채용공고게시판*/
+#container .recruit_table{
+  margin-top:30px;
+  width:100%;
+  font-size:1.6rem;
+  border-top:2px solid #ddd;
+  text-align:center;
+}
+#container .recruit_table caption{
+  display:none;
+}
+#container .recruit_table th{
+  padding:14px 0;
+  background-color:#F5F6F8;
+  border-bottom:1px solid #ddd;
+}
+#container .recruit_table tbody tr td{
+  padding:15px 0;
+  border-bottom:1px solid #ddd;
+  color:var(--sub-color);
+}
+#container .recruit_table tbody tr td:nth-child(1){
+  text-align:left;
+  color:var(--main-color);
+}
+#container .recruit_table tbody tr td:nth-child(2){
+  font-size:1.4rem;
+  color:#999;
+}
+#container .recruit_table tbody tr td.blue{
+  color:var(--main-point-color);
+  font-weight:var(--font-weight-medium);
+}
