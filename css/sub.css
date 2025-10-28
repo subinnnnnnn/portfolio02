@@ -510,6 +510,7 @@ ul.energy li .ico{
   width:150px;
   height:145px;
   margin:0 auto;
+  background-size:cover;
   background-repeat:no-repeat;
 }
 ul.energy li:nth-child(1) .ico{
@@ -712,6 +713,7 @@ ul.notice_list li p{
 }
 #container .process_area ul.process_list li{
   margin-top:20px;
+  width:calc((100% - 250px) / 6);
   text-align:center;
 }
 #container .process_area ul.process_list li div.circle{
